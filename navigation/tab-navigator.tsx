@@ -25,7 +25,7 @@ export default function TabLayout({ navigation }: Props) {
         component={One}
         options={{
           title: "Primeira aba",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
           headerRight: () => (
             <HeaderButton onPress={() => navigation.navigate("Modal")} />
           ),
@@ -36,7 +36,7 @@ export default function TabLayout({ navigation }: Props) {
         component={Two}
         options={{
           title: "Segunda aba",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="question" color={color} />,
         }}
       />
     </Tab.Navigator>
